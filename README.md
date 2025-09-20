@@ -16,7 +16,7 @@ It allows precise control of individually addressable RGB LEDs using inline GPIO
    WS2812B ws2812b = { .leds = leds, .num_leds = 96 };
    
 2. Set LED state:
-turnOnRed(&ws2812b, 1);    // LED #1 → Red
+turnOnRed(&ws2812b, 1);    // LED #1 → Red\n
 WS2812B_write(&ws2812b);   // Update strip
 
 3. Optional periodic refresh with SysTick.
