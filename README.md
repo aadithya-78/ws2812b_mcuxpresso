@@ -14,12 +14,12 @@ It allows precise control of individually addressable RGB LEDs using inline GPIO
 1. Initialize LED buffer:
    RGB_t leds[96] = {0};
    WS2812B ws2812b = { .leds = leds, .num_leds = 96 };
+    
+3. Set LED state:
+   turnOnRed(&ws2812b, 1);    // LED #1 → Red\n
+   WS2812B_write(&ws2812b);   // Update strip
    
-2. Set LED state:
-turnOnRed(&ws2812b, 1);    // LED #1 → Red\n
-WS2812B_write(&ws2812b);   // Update strip
-
-3. Optional periodic refresh with SysTick.
+4. Optional periodic refresh with SysTick.
 
 ## Notes
 
