@@ -16,6 +16,7 @@ It allows precise control of individually addressable RGB LEDs using inline GPIO
 ```c
 RGB_t leds[96] = {0};
 WS2812B ws2812b = { .leds = leds, .num_leds = 96 };
+```
 
 2. Set LED state
 
