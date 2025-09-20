@@ -18,6 +18,8 @@ RGB_t leds[96] = {0};
 WS2812B ws2812b = { .leds = leds, .num_leds = 96 };
 
 2. Set LED state
+
+```c
 turnOnRed(&ws2812b, 1);    // LED #1 → Red
 WS2812B_write(&ws2812b);   // Update strip
 
