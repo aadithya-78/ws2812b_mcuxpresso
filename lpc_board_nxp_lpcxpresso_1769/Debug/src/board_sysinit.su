@@ -1,0 +1,4 @@
+D:\Aadithya\MB_Lansub\workspace_mb_lansub\workspace\lpc_chip_175x_6x\inc/sysctl_17xx_40xx.h:153:20:Chip_SYSCTL_SetFLASHAccess	24	static
+../src/board_sysinit.c:90:6:Board_SetupMuxing	8	static
+../src/board_sysinit.c:96:6:Board_SetupClocking	8	static
+../src/board_sysinit.c:105:6:Board_SystemInit	8	static
