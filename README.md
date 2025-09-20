@@ -12,17 +12,13 @@ It allows precise control of individually addressable RGB LEDs using inline GPIO
 
 ## Usage
 1. Initialize LED buffer:
-   RGB_t leds[96] = {0};
-   WS2812B ws2812b = { .leds = leds, .num_leds = 96 };
-    
-3. Set LED state:
-   turnOnRed(&ws2812b, 1);    // LED #1 → Red\n
-   WS2812B_write(&ws2812b);   // Update strip
-   
-4. Optional periodic refresh with SysTick.
 
-## Notes
+```c
+RGB_t leds[96] = {0};
+WS2812B ws2812b = { .leds = leds, .num_leds = 96 };
 
-Timing is tuned for ~100 MHz core clock. Adjust NOPs if frequency differs.
-Ensure stable 5 V supply and level shifting if required.
-Designed for educational and embedded development use.
+2. Set LED state
+turnOnRed(&ws2812b, 1);    // LED #1 → Red
+WS2812B_write(&ws2812b);   // Update strip
+
+3. Optional periodic refresh with SysTick.
